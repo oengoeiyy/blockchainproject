@@ -34,6 +34,17 @@ class Block:
                 + "\nBlock Hash: " + str(self.hash)
                 + "\nBlock Previous Hash: " + str(self.previousHash)
                 +"\n---------------")
+        
+    def printBlockTeam(self,name):
+        if(self.data['Team1'] == name or self.data['Team2'] == name) :
+            return ("\nBlock #" + str(self.index) 
+                + "\nData: " + str(self.data)
+                + "\nTimeStamp: " + str(self.timestamp)
+                + "\nBlock Hash: " + str(self.hash)
+                + "\nBlock Previous Hash: " + str(self.previousHash)
+                +"\n---------------")
+        else :
+            return (False)
 
 class BlockChain:
     def __init__(self, file="block.chain"):
@@ -54,6 +65,7 @@ class BlockChain:
             "Score" : score,
         }
         self.chain.append(Block(self.getNextIndex(), data, self.getLatestBlock().hash))
+        
 
     def isChainValid(self):
         for i in range (1, len(self.chain)):
@@ -61,7 +73,9 @@ class BlockChain:
                 return False
             if self.chain[i].previousHash != self.chain[i-1].hash:
                 return False
+            
         return True
+
 
     def printBlockChain(self):
         return ''.join([self.chain[i].printBlock() for i in range(1, len(self.chain))])
@@ -79,8 +93,14 @@ class BlockChain:
                 data = json.load(f)
                 self.__dict__ = data 
                 self.chain = [Block("","").update(dic) for dic in data["chain"]]
+            
+    def findTeam(self,name) :
+        for i in range(1, len(self.chain)) :
+            if(self.chain[i].printBlockTeam(name)) :
+                print(self.chain[i].printBlockTeam(name))
 
 def main():
+    global blockchain 
     blockchain = BlockChain()
     blockchain.generateBlock("BACON TIME","BURIRAM UNITED","BACON TIME","3-0")
     blockchain.generateBlock("EARENA","PSG ESPORT","PSG ESPORT","1-3")
@@ -94,10 +114,18 @@ def main():
     blockchain.generateBlock("KOG DIAMOND COBRA","EARENA","EARENA","0-3")
     
     while(True) :
-        chk = input("Do you want to create new block? (y/n) : ")
-        if(chk == 'y') :
+        chk = input("\n-----ROV Pro League Data-----\n1 : View Current Blockchain\n2 : Create new Block\n3 : Find Team Data\n4 : Data Changing Testing\n5 : Show blockchain and invalid blockchain (example)\nPress exit to stop program \nWhich one do you want? : ")
+        if(chk=='1') :
+            print(blockchain.printBlockChain())
+            print ("Chain valid? " + str(blockchain.isChainValid()))
+            blockchain.save()
+            continue
+        
+        elif(chk == '2') :
             team1 = input("Team1 : ")
+            team1 = team1.upper()
             team2 = input("Team2 : ")
+            team2 = team2.upper()
             print('If ',team1,' win Press 1')
             print('If ',team2,' win Press 2')
     
@@ -109,32 +137,74 @@ def main():
                 elif(winner == '2') :
                     winner = team2
                     break
-            print("Score Team",team1) ; score1 = int(input("Score Team1 : "))
-            print("Score Team",team2) ; score2 = int(input("Score Team2 : "))
+            while(True) :
+                print("Score Team",team1," (0-4)") ; score1 = input(" : ")
+                if(score1.isnumeric()) :
+                    score1 = int(score1)
+                    if(score1 >= 0 and score1 <= 4) :
+                        break
+            while(True) :
+                print("Score Team",team2," (0-4)") ; score2 = input(" : ")
+                if(score2.isnumeric()) :
+                    score2 = int(score2) 
+                    if(score2 >= 0 and score2 <= 4) :
+                        break 
+             
+             
             score = str(score1)+'-'+str(score2)
             blockchain.generateBlock(team1, team2, winner, score)
-            break
-        elif(chk=='n') :
+            continue
+        
+        elif(chk=='3') :
+            name = input("Find Team : ")
+            name = name.upper()
+            blockchain.findTeam(name)
+            continue
+        
+        elif(chk=='4') :
+            while(True) :
+                n = input("block no. : ")
+                if(n.isnumeric()) :
+                    if(n.isnumeric() and int(n) > len(blockchain.chain)) :
+                        print("Don't have enough block!")
+                    elif(n.isnumeric() and int(n) < len(blockchain.chain)) :
+                        break 
+            message = str(input("data : "))
+            blockchain.chain[int(n)].data = message
+            print(blockchain.printBlockChain())
+            print ("Chain valid? " + str(blockchain.isChainValid()))
+            blockchain.save()
+            continue
+        
+        elif(chk=='5') :
+            testold = BlockChain()
+            testold.open()
+            print('***Before test***')
+            print(testold.printBlockChain())
+            print ("Chain valid? " + str(testold.isChainValid()))
+            blockchain.save()
+            
+            print('\n***Invalid Testing (edited blockchain) Block 2***')
+            testold.chain[2].data = "Hello ka Ajarn Parin /|\\"
+            print(testold.printBlockChain())
+            print ("Chain valid? " + str(testold.isChainValid()))
+            testold.save()
+            
+            print('\n***After Test***')
+            testnew = BlockChain()
+            testnew.open()
+            print(testnew.printBlockChain())
+            print ("Chain valid? " + str(testnew.isChainValid()))
+            testnew.save()
+            continue
+        
+        elif(chk=='exit') :
             break
         
         else :
-            print("Please insert y or n !")
+            print("Try again!")
+            continue
             
-        
-    print(blockchain.printBlockChain())
-    print ("Chain valid? " + str(blockchain.isChainValid()))
-    blockchain.save()
-
-    blockchain.chain[1].data = "Hello Darkness my old friend!"
-    print(blockchain.printBlockChain())
-    print ("Chain valid? " + str(blockchain.isChainValid()))
-    blockchain.save()
-
-    test = BlockChain()
-    test.open()
-    print(test.printBlockChain())
-    print ("Chain valid? " + str(test.isChainValid()))
-    test.save()
 
 if __name__ == '__main__':
     main()
