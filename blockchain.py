@@ -6,6 +6,8 @@ import os
 import hashlib
 import datetime
 
+#B6210236 เอกปวีร์ อุ่นภักดิ์ 
+#B6238124 สุชาวดี เที่ยงตรง
 class Block:
     def __init__(self, index, data, previousHash='00000'):
         self.index = index
