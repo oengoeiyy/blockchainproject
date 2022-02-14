@@ -3,3 +3,5 @@ Assignment1 for 523355 : INTRODUCTION TO BLOCKCHAIN TECHNOLOGY
 B6210236 เอกปวีร์ อุ่นภักดิ์ | B6238124 สุชาวดี เที่ยงตรง
 
 Program Code : "https://github.com/oengoeiyy/blockchainproject.git"
+
+block.chain คือ ไฟล์ที่เก็บข้อมูลบล็อกที่สร้างไว้แล้ว สามารถทดลองลบได้นะคะ
