@@ -137,6 +137,7 @@ class BlockChain:
 def main():
     global blockchain 
     blockchain = BlockChain()
+
     blockchain.generateBlock("BACON TIME","BURIRAM UNITED","BACON TIME","3-0")
     blockchain.generateBlock("EARENA","PSG ESPORT","PSG ESPORT","1-3")
     blockchain.generateBlock("KOG DIAMOND COBRA","TALON","TALON","2-3")
@@ -147,8 +148,9 @@ def main():
     blockchain.generateBlock("EVOS ESPORTS","TALON","TALON","3-0")
     blockchain.generateBlock("BURIRAM UNITED","PSG ESPORT","PSG ESPORT","1-3")
     blockchain.generateBlock("KOG DIAMOND COBRA","EARENA","EARENA","0-3")
-    blockchain.open()
+
     
+    blockchain.open()
     while(True) :
         chk = input("\n-----█▀█ █▀█ █░█   █▀█ █▀█ █▀█   █░░ █▀▀ ▄▀█ █▀▀ █░█ █▀▀----- \n-----█▀▄ █▄█ ▀▄▀   █▀▀ █▀▄ █▄█   █▄▄ ██▄ █▀█ █▄█ █▄█ ██▄-----\n\n1 : View Current Blockchain\n2 : Create new Block\n3 : Find Team Data\n4 : Data Changing Testing\n5 : Show blockchain and invalid blockchain (example)\nPress exit to stop program \nWhich one do you want? : ")
         if(chk=='1') :
