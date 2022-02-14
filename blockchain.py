@@ -50,7 +50,7 @@ class Block:
 
 class BlockChain:
     def __init__(self, file="block.chain"):
-        self.chain = []
+        self.chain = [Block(0,"Genesis")]
         self.file=file
 
     def getLatestBlock(self):
@@ -118,8 +118,8 @@ class BlockChain:
 def main():
     global blockchain 
     blockchain = BlockChain()
-    blockchain.open()
-    '''blockchain.generateBlock("BACON TIME","BURIRAM UNITED","BACON TIME","3-0")
+    
+    blockchain.generateBlock("BACON TIME","BURIRAM UNITED","BACON TIME","3-0")
     blockchain.generateBlock("EARENA","PSG ESPORT","PSG ESPORT","1-3")
     blockchain.generateBlock("KOG DIAMOND COBRA","TALON","TALON","2-3")
     blockchain.generateBlock("PSG ESPORT","EVOS ESPORTS","PSG ESPORT","3-2")
@@ -128,9 +128,9 @@ def main():
     blockchain.generateBlock("BACON TIME","GOLDCITY ESPORTS","BACON TIME","3-2")
     blockchain.generateBlock("EVOS ESPORTS","TALON","TALON","3-0")
     blockchain.generateBlock("BURIRAM UNITED","PSG ESPORT","PSG ESPORT","1-3")
-    blockchain.generateBlock("KOG DIAMOND COBRA","EARENA","EARENA","0-3")'''
+    blockchain.generateBlock("KOG DIAMOND COBRA","EARENA","EARENA","0-3")
     
-    
+    blockchain.open()
     while(True) :
         chk = input("\n-----ROV Pro League Data-----\n1 : View Current Blockchain\n2 : Create new Block\n3 : Find Team Data\n4 : Data Changing Testing\n5 : Show blockchain and invalid blockchain (example)\nPress exit to stop program \nWhich one do you want? : ")
         if(chk=='1') :
