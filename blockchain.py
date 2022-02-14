@@ -30,27 +30,44 @@ class Block:
         return self.hash == self.calculateHash()
 
     def printBlock(self):
-        return ("\n-------Block #" + str(self.index) 
-                + "-------\nData: " + str(self.data)
-                + "\nTimeStamp: " + str(self.timestamp)
-                + "\nBlock Hash: " + str(self.hash)
-                + "\nBlock Previous Hash: " + str(self.previousHash)
-                +"\n")
+        if(type(self.data) == str):
+            return ("\n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓"
+                + "\n  Block #" + str(self.index) 
+                + "\n  Data: " + str(self.data)
+                + "\n  TimeStamp: " + str(self.timestamp)
+                + "\n  Block Hash: " + str(self.hash)
+                + "\n  Block Previous Hash: " + str(self.previousHash)
+                +"\n┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛\n")
+        else:
+            return ("\n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓"
+                + "\n  Block #" + str(self.index)
+                + "\n  Data \n\tTeam1 : " + str(self.data['Team1']) 
+                + "\n\tTeam2 : " + str(self.data['Team2']) 
+                + "\n\tWinner : " + str(self.data['Winner']) 
+                + "\n\tScore : " + str(self.data['Score'])
+                + "\n  TimeStamp: " + str(self.timestamp)
+                + "\n  Block Hash: " + str(self.hash)
+                + "\n  Block Previous Hash: " + str(self.previousHash)
+                + "\n┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛\n")
         
     def printBlockTeam(self,name):
-        if(self.data['Team1'] == name or self.data['Team2'] == name) :
-            return ("\n-------Block #" + str(self.index) 
-                + "-------\nData: " + str(self.data)
-                + "\nTimeStamp: " + str(self.timestamp)
-                + "\nBlock Hash: " + str(self.hash)
-                + "\nBlock Previous Hash: " + str(self.previousHash)
-                +"\n")
+        if( name in self.data['Team1'] or name in self.data['Team2']) :
+            return ("\n╔════════════════════════════════════════════════════════════════════════════════════════════════════════════╗"
+                + "\n  Block #" + str(self.index)
+                + "\n  Data \n\tTeam1 : " + str(self.data['Team1']) 
+                + "\n\tTeam2 : " + str(self.data['Team2']) 
+                + "\n\tWinner : " + str(self.data['Winner']) 
+                + "\n\tScore : " + str(self.data['Score'])
+                + "\n  TimeStamp: " + str(self.timestamp)
+                + "\n  Block Hash: " + str(self.hash)
+                + "\n  Block Previous Hash: " + str(self.previousHash)
+                +"\n╚════════════════════════════════════════════════════════════════════════════════════════════════════════════╝\n")
         else :
             return (False)
 
 class BlockChain:
     def __init__(self, file="block.chain"):
-        self.chain = []
+        self.chain = [Block(0,"Genesis")]
         self.file=file
 
     def getLatestBlock(self):
@@ -86,9 +103,9 @@ class BlockChain:
             
     def printValid(self):
         if(self.isChainValid()) :
-            return "Verification : Verificated"
+            return "Verification : Verificated（ฅ＾・ﻌ・＾）ฅ"
         elif(not self.isChainValid()) :
-            return "Verification : not Verificated\nInvalid at Block #"+str(self.invalidIndex())
+            return "Verification : not Verificated ╮(￣▽￣)╭\nInvalid at Block #"+str(self.invalidIndex())
         
     def chkln(self):
         print(len(self.chain))
@@ -118,8 +135,7 @@ class BlockChain:
 def main():
     global blockchain 
     blockchain = BlockChain()
-    blockchain.open()
-    '''blockchain.generateBlock("BACON TIME","BURIRAM UNITED","BACON TIME","3-0")
+    blockchain.generateBlock("BACON TIME","BURIRAM UNITED","BACON TIME","3-0")
     blockchain.generateBlock("EARENA","PSG ESPORT","PSG ESPORT","1-3")
     blockchain.generateBlock("KOG DIAMOND COBRA","TALON","TALON","2-3")
     blockchain.generateBlock("PSG ESPORT","EVOS ESPORTS","PSG ESPORT","3-2")
@@ -128,11 +144,11 @@ def main():
     blockchain.generateBlock("BACON TIME","GOLDCITY ESPORTS","BACON TIME","3-2")
     blockchain.generateBlock("EVOS ESPORTS","TALON","TALON","3-0")
     blockchain.generateBlock("BURIRAM UNITED","PSG ESPORT","PSG ESPORT","1-3")
-    blockchain.generateBlock("KOG DIAMOND COBRA","EARENA","EARENA","0-3")'''
-    
+    blockchain.generateBlock("KOG DIAMOND COBRA","EARENA","EARENA","0-3")
+    blockchain.open()
     
     while(True) :
-        chk = input("\n-----ROV Pro League Data-----\n1 : View Current Blockchain\n2 : Create new Block\n3 : Find Team Data\n4 : Data Changing Testing\n5 : Show blockchain and invalid blockchain (example)\nPress exit to stop program \nWhich one do you want? : ")
+        chk = input("\n-----█▀█ █▀█ █░█   █▀█ █▀█ █▀█   █░░ █▀▀ ▄▀█ █▀▀ █░█ █▀▀----- \n-----█▀▄ █▄█ ▀▄▀   █▀▀ █▀▄ █▄█   █▄▄ ██▄ █▀█ █▄█ █▄█ ██▄-----\n\n1 : View Current Blockchain\n2 : Create new Block\n3 : Find Team Data\n4 : Data Changing Testing\n5 : Show blockchain and invalid blockchain (example)\nPress exit to stop program \nWhich one do you want? : ")
         if(chk=='1') :
             print(blockchain.printBlockChain())
             print (blockchain.printValid())
@@ -146,7 +162,7 @@ def main():
             team2 = team2.upper()
             print('If ',team1,' win Press 1')
             print('If ',team2,' win Press 2')
-    
+
             while(True) :
                 winner = str(input("Winner : "))
                 if(winner == '1') :
@@ -156,19 +172,27 @@ def main():
                     winner = team2
                     break
             while(True) :
-                print("Score Team",team1," (0-4)") ; score1 = input(" : ")
-                if(score1.isnumeric()) :
-                    score1 = int(score1)
-                    if(score1 >= 0 and score1 <= 4) :
-                        break
-            while(True) :
-                print("Score Team",team2," (0-4)") ; score2 = input(" : ")
-                if(score2.isnumeric()) :
-                    score2 = int(score2) 
-                    if(score2 >= 0 and score2 <= 4) :
-                        break 
-             
-             
+                while(True) :
+                    print("Score Team",team1," (0-4)") ; score1 = input(" : ")
+                    if(score1.isnumeric()) :
+                        score1 = int(score1)
+                        if(score1 >= 0 and score1 <= 4) :
+                            break
+                while(True) :
+                    print("Score Team",team2," (0-4)") ; score2 = input(" : ")
+                    if(score2.isnumeric()) :
+                        score2 = int(score2) 
+                        if(score2 >= 0 and score2 <= 4) :
+                            break 
+                if(winner == team1 and score2 >= score1) :
+                    print(team1,"is winner! please enter score again")
+                    continue
+                elif(winner == team2 and score1 >= score2) :
+                    print(team2,"is winner! please enter score again")
+                    continue
+                else :
+                    break
+
             score = str(score1)+'-'+str(score2)
             blockchain.generateBlock(team1, team2, winner, score)
             blockchain.save()
