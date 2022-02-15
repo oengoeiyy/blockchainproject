@@ -6,6 +6,5 @@ Program Code : "https://github.com/oengoeiyy/blockchainproject.git"
 
 block.chain คือ ไฟล์ที่เก็บข้อมูลบล็อกที่สร้างไว้แล้ว (setup data) กรณีลบทิ้งสามารถกดใช้operationใดก็ได้เพื่อสร้างใหม่ค่ะ 
 
-＼⍩⃝／
-
+♡´･ᴗ･ `♡
 
