@@ -109,9 +109,6 @@ class BlockChain:
         elif(not self.isChainValid()) :
             return "Verification : not Verificated ╮(￣▽￣)╭\nInvalid at Block #"+str(self.invalidIndex())
         
-    def chkln(self):
-        print(len(self.chain))
-    
     def printBlockChain(self):
         return ''.join([self.chain[i].printBlock() for i in range(1, len(self.chain))])
 
@@ -148,7 +145,6 @@ def main():
     blockchain.generateBlock("EVOS ESPORTS","TALON","TALON","3-0")
     blockchain.generateBlock("BURIRAM UNITED","PSG ESPORT","PSG ESPORT","1-3")
     blockchain.generateBlock("KOG DIAMOND COBRA","EARENA","EARENA","0-3")
-
     
     blockchain.open()
     while(True) :
@@ -253,7 +249,8 @@ def main():
         else :
             print("Try again!")
             continue
-            
+    
+    blockchain.save()        
 
 if __name__ == '__main__':
     main()
