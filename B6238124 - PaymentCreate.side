@@ -1,0 +1,3013 @@
+{
+  "id": "d11f8a3e-eef1-4c88-8e33-c173ed3e3217",
+  "version": "2.0",
+  "name": "B6238124 - PaymentCreate",
+  "url": "http://localhost:3000/",
+  "tests": [{
+    "id": "e6572730-2322-43d4-9639-fbb3963e4cdb",
+    "name": "B6238124 - บันทึกข้อมูล payment สำเร็จ",
+    "commands": [{
+      "id": "81943e88-48f0-481a-9863-4be7c57866c2",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:3000/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fcb417e0-0948-41bf-8a02-e4224fed4eb7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "57c9ce95-05ca-4fad-9e38-37c3d39bba26",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButtonBase-root:nth-child(6) > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButtonBase-root:nth-child(6) > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/a[5]/span", "xpath:idRelative"],
+        ["xpath=//a[5]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'ประวัติการบันทึกการชำระเงิน   ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d1f10a5c-da87-46de-a9fd-bd3b901fe5c6",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.MuiButton-contained > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-contained > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'สร้างข้อมูล')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "54effb94-f43b-4266-9bb5-bbb7b69ba41f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButton-contained > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-contained > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'สร้างข้อมูล')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e82ea8b9-8e96-4e90-92ea-313062ad3575",
+      "comment": "",
+      "command": "click",
+      "target": "name=CustomerPaymentID",
+      "targets": [
+        ["name=CustomerPaymentID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='CustomerPaymentID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div/div[2]/form/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/form/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "df4fda8a-9bb9-435a-91bb-76a65fe6524f",
+      "comment": "",
+      "command": "select",
+      "target": "name=CustomerPaymentID",
+      "targets": [],
+      "value": "label=Faii"
+    }, {
+      "id": "116f5090-b1c8-49e6-95b4-a4aa2f21b8df",
+      "comment": "",
+      "command": "click",
+      "target": "id=Bill",
+      "targets": [
+        ["id=Bill", "id"],
+        ["css=#Bill", "css:finder"],
+        ["xpath=//input[@id='Bill']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div/div[3]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f79dc2ba-c550-49f2-a60e-4bba205392b7",
+      "comment": "",
+      "command": "type",
+      "target": "id=Bill",
+      "targets": [
+        ["id=Bill", "id"],
+        ["css=#Bill", "css:finder"],
+        ["xpath=//input[@id='Bill']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div/div[3]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "R000004"
+    }, {
+      "id": "c2c49949-72d1-4ba6-aef7-084145081f87",
+      "comment": "",
+      "command": "click",
+      "target": "name=FacilityID",
+      "targets": [
+        ["name=FacilityID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='FacilityID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div/form/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a6edb5b0-3118-4b35-b85a-2e0182256178",
+      "comment": "",
+      "command": "select",
+      "target": "name=FacilityID",
+      "targets": [],
+      "value": "label=A000009 (ค่าบริการ: 5000)"
+    }, {
+      "id": "3039937a-5644-4788-8fcf-a6e4e0c72fbf",
+      "comment": "",
+      "command": "click",
+      "target": "id=Discount",
+      "targets": [
+        ["id=Discount", "id"],
+        ["css=#Discount", "css:finder"],
+        ["xpath=//input[@id='Discount']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[2]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4bba36ee-fb0f-435c-87c8-6543f0c0ad34",
+      "comment": "",
+      "command": "type",
+      "target": "id=Discount",
+      "targets": [
+        ["id=Discount", "id"],
+        ["css=#Discount", "css:finder"],
+        ["xpath=//input[@id='Discount']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[2]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "500"
+    }, {
+      "id": "4de0d477-3149-411f-ac77-09b02b543136",
+      "comment": "",
+      "command": "click",
+      "target": "id=Total",
+      "targets": [
+        ["id=Total", "id"],
+        ["css=#Total", "css:finder"],
+        ["xpath=//input[@id='Total']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[3]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d61681d5-73b7-4d3c-80e2-d89f5c255e73",
+      "comment": "",
+      "command": "type",
+      "target": "id=Total",
+      "targets": [
+        ["id=Total", "id"],
+        ["css=#Total", "css:finder"],
+        ["xpath=//input[@id='Total']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[3]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "4500"
+    }, {
+      "id": "7d601a05-08a3-49ff-b0fe-8c98820f366d",
+      "comment": "",
+      "command": "click",
+      "target": "name=PaymentMethodID",
+      "targets": [
+        ["name=PaymentMethodID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='PaymentMethodID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[4]/form/div/select", "xpath:idRelative"],
+        ["xpath=//div[4]/form/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "af15fe7c-13f6-4e68-a9d0-f74ebea55efb",
+      "comment": "",
+      "command": "select",
+      "target": "name=PaymentMethodID",
+      "targets": [],
+      "value": "label=Visa"
+    }, {
+      "id": "d7586263-9d0e-4729-b02d-71966a3e7cd0",
+      "comment": "",
+      "command": "click",
+      "target": "id=Note",
+      "targets": [
+        ["id=Note", "id"],
+        ["css=#Note", "css:finder"],
+        ["xpath=//input[@id='Note']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[5]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3bca74c9-623d-4b0f-b0fa-54a6db7b0bd3",
+      "comment": "",
+      "command": "type",
+      "target": "id=Note",
+      "targets": [
+        ["id=Note", "id"],
+        ["css=#Note", "css:finder"],
+        ["xpath=//input[@id='Note']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[5]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "-"
+    }, {
+      "id": "8244f6ce-e6eb-491a-a39f-4962363e4e84",
+      "comment": "",
+      "command": "click",
+      "target": "css=.makeStyles-button-40 > .MuiButton-label",
+      "targets": [
+        ["css=.makeStyles-button-40 > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[7]/button/span", "xpath:idRelative"],
+        ["xpath=//div[7]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'บันทึกการชำระเงิน')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "113fac68-1d34-4ced-8cf9-d857f8e51eb4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiAlert-root",
+      "targets": [
+        ["css=.MuiAlert-root", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "10107b46-d975-4dc8-a1b6-de4a998a7d2a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.MuiAlert-message",
+      "targets": [
+        ["css=.MuiAlert-message", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div/div/div[2]", "xpath:position"]
+      ],
+      "value": "บันทึกข้อมูลสำเร็จ"
+    }, {
+      "id": "299fd14f-92b1-4a40-8697-38b1c145d0bb",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.makeStyles-button2-41 > .MuiButton-label",
+      "targets": [
+        ["css=.makeStyles-button2-41 > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div[2]/div/div/div/div[4]/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'ดูประวัติการชำระเงิน')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc103fa3-b58c-4396-b3db-ce6299fe3a61",
+      "comment": "",
+      "command": "click",
+      "target": "css=.makeStyles-button2-41 > .MuiButton-label",
+      "targets": [
+        ["css=.makeStyles-button2-41 > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div[2]/div/div/div/div[4]/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'ดูประวัติการชำระเงิน')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "458f1a09-bd72-49b5-a367-156a4b28c3f9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiTableRow-root:nth-child(1) path",
+      "targets": [
+        ["css=.MuiTableRow-root:nth-child(1) path", "css:finder"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "0cd0b29e-4ebb-486f-b2d0-e2c3fbf6ffc5",
+    "name": "B6238124 - ตรวจสอบ Bill ต้องไม่เป็นค่าว่าง",
+    "commands": [{
+      "id": "4031647a-b21c-403e-a5c7-a1d7c21e4453",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:3000/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "59c99d61-3379-4832-87b8-bdaa5ccf98b5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2447ea02-829c-49d6-a17c-38859ffdf7a9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButtonBase-root:nth-child(6) > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButtonBase-root:nth-child(6) > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div[2]/a[5]/span", "xpath:idRelative"],
+        ["xpath=//a[5]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'ประวัติการบันทึกการชำระเงิน   ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c68b0661-0c35-4e68-980d-98aa78e56f78",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButton-contained > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-contained > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'สร้างข้อมูล')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "59aa80f5-f6e8-40c4-b720-7c309e8f0cd9",
+      "comment": "",
+      "command": "click",
+      "target": "name=CustomerPaymentID",
+      "targets": [
+        ["name=CustomerPaymentID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='CustomerPaymentID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div/div[2]/form/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/form/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "72525f9b-e8a5-47ae-bb08-472d1c90a097",
+      "comment": "",
+      "command": "select",
+      "target": "name=CustomerPaymentID",
+      "targets": [],
+      "value": "label=Faii"
+    }, {
+      "id": "47133bec-77db-4677-83d1-39e91081cf58",
+      "comment": "",
+      "command": "click",
+      "target": "name=FacilityID",
+      "targets": [
+        ["name=FacilityID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='FacilityID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div/form/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6932cf33-816f-4dbe-a72b-054359344515",
+      "comment": "",
+      "command": "select",
+      "target": "name=FacilityID",
+      "targets": [],
+      "value": "label=A000010 (ค่าบริการ: 500)"
+    }, {
+      "id": "b2dcf737-be06-4591-b5d6-8c3775867952",
+      "comment": "",
+      "command": "click",
+      "target": "id=Discount",
+      "targets": [
+        ["id=Discount", "id"],
+        ["css=#Discount", "css:finder"],
+        ["xpath=//input[@id='Discount']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[2]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1bc0900-effa-4092-9436-fe71a7191d86",
+      "comment": "",
+      "command": "type",
+      "target": "id=Discount",
+      "targets": [
+        ["id=Discount", "id"],
+        ["css=#Discount", "css:finder"],
+        ["xpath=//input[@id='Discount']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[2]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "200"
+    }, {
+      "id": "f8e4be6f-4999-4b8a-8817-3e2742139d6e",
+      "comment": "",
+      "command": "click",
+      "target": "id=Total",
+      "targets": [
+        ["id=Total", "id"],
+        ["css=#Total", "css:finder"],
+        ["xpath=//input[@id='Total']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[3]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9e77fa44-d350-49dd-943c-b6216b420469",
+      "comment": "",
+      "command": "type",
+      "target": "id=Total",
+      "targets": [
+        ["id=Total", "id"],
+        ["css=#Total", "css:finder"],
+        ["xpath=//input[@id='Total']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[3]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "300"
+    }, {
+      "id": "14129590-11c1-433a-8716-36a8f5fded41",
+      "comment": "",
+      "command": "click",
+      "target": "name=PaymentMethodID",
+      "targets": [
+        ["name=PaymentMethodID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='PaymentMethodID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[4]/form/div/select", "xpath:idRelative"],
+        ["xpath=//div[4]/form/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b230404e-f76b-48f0-be25-3a9fc96ffe5d",
+      "comment": "",
+      "command": "select",
+      "target": "name=PaymentMethodID",
+      "targets": [],
+      "value": "label=Visa"
+    }, {
+      "id": "c821bc03-324f-4125-b480-9718ce36fb26",
+      "comment": "",
+      "command": "click",
+      "target": "id=Note",
+      "targets": [
+        ["id=Note", "id"],
+        ["css=#Note", "css:finder"],
+        ["xpath=//input[@id='Note']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[5]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5cc222af-b55e-4875-8067-061ca119e074",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.makeStyles-button-40 > .MuiButton-label",
+      "targets": [
+        ["css=.makeStyles-button-40 > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[7]/button/span", "xpath:idRelative"],
+        ["xpath=//div[7]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'บันทึกการชำระเงิน')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2ec356c-f925-4e8c-b61e-5b523a34040c",
+      "comment": "",
+      "command": "type",
+      "target": "id=Note",
+      "targets": [
+        ["id=Note", "id"],
+        ["css=#Note", "css:finder"],
+        ["xpath=//input[@id='Note']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[5]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "-"
+    }, {
+      "id": "1148e06d-9f17-4b75-9946-4fd90a28a69b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.makeStyles-button-40 > .MuiButton-label",
+      "targets": [
+        ["css=.makeStyles-button-40 > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[7]/button/span", "xpath:idRelative"],
+        ["xpath=//div[7]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'บันทึกการชำระเงิน')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9be42cb1-8c42-479b-949d-b1115eac4e17",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.makeStyles-button-40 > .MuiButton-label",
+      "targets": [
+        ["css=.makeStyles-button-40 > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div[2]/div/div/div[2]/div[7]/button/span", "xpath:idRelative"],
+        ["xpath=//div[7]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'บันทึกการชำระเงิน')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "39132fc0-6ca5-4ccc-a7d3-dd777390fa3e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiAlert-root",
+      "targets": [
+        ["css=.MuiAlert-root", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3dfc99c3-e176-4e05-af67-e2071b9e1626",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.MuiAlert-message",
+      "targets": [
+        ["css=.MuiAlert-message", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div/div/div[2]", "xpath:position"]
+      ],
+      "value": "บันทึกข้อมูลไม่สำเร็จ: Bill cannot be blank"
+    }]
+  }, {
+    "id": "7ee46559-281d-4c09-a695-7ff234ef17e3",
+    "name": "B6238124 - ตรวจสอบ Bill ต้องเป็นไปตาม Pattern ที่กำหนด",
+    "commands": [{
+      "id": "1931b278-8688-4fd0-9b42-29b40efaafc9",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:3000/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a47fff8e-e371-4e5a-831e-0c26de889dbd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1215b435-0bb6-4d33-b112-78a8c1f1a126",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.MuiButtonBase-root:nth-child(6) > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButtonBase-root:nth-child(6) > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div[2]/a[5]/span", "xpath:idRelative"],
+        ["xpath=//a[5]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'ประวัติการบันทึกการชำระเงิน   ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "72473342-a720-466e-b1fa-a97686d0c905",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButtonBase-root:nth-child(6) > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButtonBase-root:nth-child(6) > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div[2]/a[5]/span", "xpath:idRelative"],
+        ["xpath=//a[5]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'ประวัติการบันทึกการชำระเงิน   ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "109d9c5e-1d0d-4498-9fa2-877008006a1a",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.MuiButton-contained > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-contained > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'สร้างข้อมูล')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab71093b-e1e0-42ef-aba1-211e38c60581",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButton-contained > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-contained > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'สร้างข้อมูล')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9196cd12-a353-4c97-a2d5-79c7dcb8fd61",
+      "comment": "",
+      "command": "click",
+      "target": "name=CustomerPaymentID",
+      "targets": [
+        ["name=CustomerPaymentID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='CustomerPaymentID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div/div[2]/form/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/form/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "23f79e0b-dfe1-4af5-ab69-f4d66ef435f3",
+      "comment": "",
+      "command": "select",
+      "target": "name=CustomerPaymentID",
+      "targets": [],
+      "value": "label=Faii"
+    }, {
+      "id": "86360326-93e6-49f7-b80f-d808df94c469",
+      "comment": "",
+      "command": "click",
+      "target": "id=Bill",
+      "targets": [
+        ["id=Bill", "id"],
+        ["css=#Bill", "css:finder"],
+        ["xpath=//input[@id='Bill']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div/div[3]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d84f470-9f17-4313-86ac-37e51e2c7726",
+      "comment": "",
+      "command": "type",
+      "target": "id=Bill",
+      "targets": [
+        ["id=Bill", "id"],
+        ["css=#Bill", "css:finder"],
+        ["xpath=//input[@id='Bill']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div/div[3]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "RX00023"
+    }, {
+      "id": "16859364-a20f-4b51-8aad-93805cc5915d",
+      "comment": "",
+      "command": "click",
+      "target": "name=FacilityID",
+      "targets": [
+        ["name=FacilityID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='FacilityID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div/form/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "910fdf49-ead2-47f9-b70f-97d61d19d780",
+      "comment": "",
+      "command": "select",
+      "target": "name=FacilityID",
+      "targets": [],
+      "value": "label=A000010 (ค่าบริการ: 500)"
+    }, {
+      "id": "6143a319-e141-49d0-85a0-8cd097c6c6bb",
+      "comment": "",
+      "command": "click",
+      "target": "id=Discount",
+      "targets": [
+        ["id=Discount", "id"],
+        ["css=#Discount", "css:finder"],
+        ["xpath=//input[@id='Discount']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[2]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e59d1972-26ca-4f80-9abf-75467bbe4cb1",
+      "comment": "",
+      "command": "type",
+      "target": "id=Discount",
+      "targets": [
+        ["id=Discount", "id"],
+        ["css=#Discount", "css:finder"],
+        ["xpath=//input[@id='Discount']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[2]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "200"
+    }, {
+      "id": "5e3abdaf-92f8-480d-bc05-682338b612b7",
+      "comment": "",
+      "command": "click",
+      "target": "id=Total",
+      "targets": [
+        ["id=Total", "id"],
+        ["css=#Total", "css:finder"],
+        ["xpath=//input[@id='Total']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[3]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd414d10-88c4-4707-ab82-aab213b44061",
+      "comment": "",
+      "command": "type",
+      "target": "id=Total",
+      "targets": [
+        ["id=Total", "id"],
+        ["css=#Total", "css:finder"],
+        ["xpath=//input[@id='Total']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[3]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "300"
+    }, {
+      "id": "b8202153-4b61-4179-bf24-e64f8f2741cf",
+      "comment": "",
+      "command": "click",
+      "target": "name=PaymentMethodID",
+      "targets": [
+        ["name=PaymentMethodID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='PaymentMethodID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[4]/form/div/select", "xpath:idRelative"],
+        ["xpath=//div[4]/form/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "50db880e-8329-44a5-9aef-6933fa46f1d8",
+      "comment": "",
+      "command": "select",
+      "target": "name=PaymentMethodID",
+      "targets": [],
+      "value": "label=Visa"
+    }, {
+      "id": "e176e698-e5b1-4b92-9dc7-032430fcd0da",
+      "comment": "",
+      "command": "click",
+      "target": "id=Note",
+      "targets": [
+        ["id=Note", "id"],
+        ["css=#Note", "css:finder"],
+        ["xpath=//input[@id='Note']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[5]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d117f14d-cb39-4df1-aaf2-90e4cb5e246b",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.makeStyles-button-40 > .MuiButton-label",
+      "targets": [
+        ["css=.makeStyles-button-40 > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[7]/button/span", "xpath:idRelative"],
+        ["xpath=//div[7]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'บันทึกการชำระเงิน')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "798f4f95-a3aa-4ac4-a983-6aabf59e5196",
+      "comment": "",
+      "command": "type",
+      "target": "id=Note",
+      "targets": [
+        ["id=Note", "id"],
+        ["css=#Note", "css:finder"],
+        ["xpath=//input[@id='Note']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[5]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "-"
+    }, {
+      "id": "76cae1d3-f508-4946-8d19-156adcbc032a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.makeStyles-button-40 > .MuiButton-label",
+      "targets": [
+        ["css=.makeStyles-button-40 > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[7]/button/span", "xpath:idRelative"],
+        ["xpath=//div[7]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'บันทึกการชำระเงิน')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7313d643-e1d1-491d-ab2c-c15ae6dcb2c0",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.makeStyles-button-40 > .MuiButton-label",
+      "targets": [
+        ["css=.makeStyles-button-40 > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div[2]/div/div/div[2]/div[7]/button/span", "xpath:idRelative"],
+        ["xpath=//div[7]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'บันทึกการชำระเงิน')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "44262e39-e9a0-4bda-a402-61e6a7cebe70",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiAlert-root",
+      "targets": [
+        ["css=.MuiAlert-root", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c2c2f38-7961-4488-bcb9-66afa3d57627",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.MuiAlert-message",
+      "targets": [
+        ["css=.MuiAlert-message", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div/div/div[2]", "xpath:position"]
+      ],
+      "value": "บันทึกข้อมูลไม่สำเร็จ: Bill: RX00023 does not validate as matches(^[R]\\d{6}$)"
+    }]
+  }, {
+    "id": "65fd5e76-a742-4020-8e04-69dbd99bfcb7",
+    "name": "B6238124 - ตรวจสอบ Bill ต้องไม่ซ้ำ",
+    "commands": [{
+      "id": "0881d970-6774-4709-a866-b3863e0a5133",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:3000/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "599e762b-c78e-4881-a60a-d2789e46800a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8bfbac7e-db80-4bc7-a1cb-57ddafbb52be",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButtonBase-root:nth-child(6) .MuiTypography-root",
+      "targets": [
+        ["css=.MuiButtonBase-root:nth-child(6) .MuiTypography-root", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div[2]/a[5]/span/p", "xpath:idRelative"],
+        ["xpath=//a[5]/span/p", "xpath:position"],
+        ["xpath=//p[contains(.,'ประวัติการบันทึกการชำระเงิน   ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f0106493-62d5-47f6-b7c5-576ad8f52cf3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButton-contained > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-contained > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'สร้างข้อมูล')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3039c235-7018-4518-a14d-1e64e867da0e",
+      "comment": "",
+      "command": "click",
+      "target": "name=CustomerPaymentID",
+      "targets": [
+        ["name=CustomerPaymentID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='CustomerPaymentID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div/div[2]/form/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/form/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "48b56da0-5cca-4d87-8746-f3f4a52607bd",
+      "comment": "",
+      "command": "select",
+      "target": "name=CustomerPaymentID",
+      "targets": [],
+      "value": "label=Faii"
+    }, {
+      "id": "14e8fef4-030f-484c-ae9b-1e4cdb7174ec",
+      "comment": "",
+      "command": "click",
+      "target": "id=Bill",
+      "targets": [
+        ["id=Bill", "id"],
+        ["css=#Bill", "css:finder"],
+        ["xpath=//input[@id='Bill']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div/div[3]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "73e61067-50af-4536-9dcd-e1ce72c73296",
+      "comment": "",
+      "command": "type",
+      "target": "id=Bill",
+      "targets": [
+        ["id=Bill", "id"],
+        ["css=#Bill", "css:finder"],
+        ["xpath=//input[@id='Bill']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div/div[3]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "R000002"
+    }, {
+      "id": "0d921916-e055-48ee-9900-7e4c13ae4484",
+      "comment": "",
+      "command": "click",
+      "target": "name=FacilityID",
+      "targets": [
+        ["name=FacilityID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='FacilityID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div/form/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0b5726f8-c92f-4390-a281-8415bf8f5f8c",
+      "comment": "",
+      "command": "select",
+      "target": "name=FacilityID",
+      "targets": [],
+      "value": "label=A000010 (ค่าบริการ: 500)"
+    }, {
+      "id": "e59f7807-1bf3-47b1-b5d8-d7a8574ad327",
+      "comment": "",
+      "command": "click",
+      "target": "id=Discount",
+      "targets": [
+        ["id=Discount", "id"],
+        ["css=#Discount", "css:finder"],
+        ["xpath=//input[@id='Discount']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[2]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d1b2373-970e-48f8-b90f-a21d0612f357",
+      "comment": "",
+      "command": "type",
+      "target": "id=Discount",
+      "targets": [
+        ["id=Discount", "id"],
+        ["css=#Discount", "css:finder"],
+        ["xpath=//input[@id='Discount']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[2]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "200"
+    }, {
+      "id": "1d98400d-be61-4741-8120-431ee950a680",
+      "comment": "",
+      "command": "click",
+      "target": "id=Total",
+      "targets": [
+        ["id=Total", "id"],
+        ["css=#Total", "css:finder"],
+        ["xpath=//input[@id='Total']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[3]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "96eb1037-5ccc-4b2d-98e1-cb98aa6f82a5",
+      "comment": "",
+      "command": "type",
+      "target": "id=Total",
+      "targets": [
+        ["id=Total", "id"],
+        ["css=#Total", "css:finder"],
+        ["xpath=//input[@id='Total']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[3]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "300"
+    }, {
+      "id": "a0c67ffa-0e94-42a2-bdb7-94a3c9f8db6d",
+      "comment": "",
+      "command": "click",
+      "target": "name=PaymentMethodID",
+      "targets": [
+        ["name=PaymentMethodID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='PaymentMethodID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[4]/form/div/select", "xpath:idRelative"],
+        ["xpath=//div[4]/form/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c33c5e1-b454-47ff-80a7-97974fedb974",
+      "comment": "",
+      "command": "select",
+      "target": "name=PaymentMethodID",
+      "targets": [],
+      "value": "label=Visa"
+    }, {
+      "id": "ddf4a9f2-4137-4cd9-93ab-3be89b6a8426",
+      "comment": "",
+      "command": "click",
+      "target": "id=Note",
+      "targets": [
+        ["id=Note", "id"],
+        ["css=#Note", "css:finder"],
+        ["xpath=//input[@id='Note']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[5]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e13e3c32-a99c-4b51-b62f-81e8b7c192b6",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.makeStyles-button-40 > .MuiButton-label",
+      "targets": [
+        ["css=.makeStyles-button-40 > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[7]/button/span", "xpath:idRelative"],
+        ["xpath=//div[7]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'บันทึกการชำระเงิน')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "07d4ae56-c6de-4830-a4f0-da70bdf34536",
+      "comment": "",
+      "command": "type",
+      "target": "id=Note",
+      "targets": [
+        ["id=Note", "id"],
+        ["css=#Note", "css:finder"],
+        ["xpath=//input[@id='Note']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[5]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "-"
+    }, {
+      "id": "a670751b-749f-47ef-a42c-2efeb70ded92",
+      "comment": "",
+      "command": "click",
+      "target": "css=.makeStyles-button-40 > .MuiButton-label",
+      "targets": [
+        ["css=.makeStyles-button-40 > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[7]/button/span", "xpath:idRelative"],
+        ["xpath=//div[7]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'บันทึกการชำระเงิน')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "21d94bff-ca06-4e0b-a335-780d181eb296",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.makeStyles-button-40 > .MuiButton-label",
+      "targets": [
+        ["css=.makeStyles-button-40 > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div[2]/div/div/div[2]/div[7]/button/span", "xpath:idRelative"],
+        ["xpath=//div[7]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'บันทึกการชำระเงิน')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fbd7f136-6b99-46f0-895f-5b68d94e3be0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiAlert-root",
+      "targets": [
+        ["css=.MuiAlert-root", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "defd8f4e-11ea-420d-92aa-923bd61b64ac",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.MuiAlert-message",
+      "targets": [
+        ["css=.MuiAlert-message", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div/div/div[2]", "xpath:position"]
+      ],
+      "value": "บันทึกข้อมูลไม่สำเร็จ: เลขที่ใบเสร็จซ้ำ"
+    }]
+  }, {
+    "id": "ac6d14ae-6b05-49e4-a7fb-ac96165e2f80",
+    "name": "B6238124 - ตรวจสอบ Facility ต้องไม่ซ้ำ",
+    "commands": [{
+      "id": "1c456515-349e-4cfe-9214-5072421cd85c",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:3000/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "16a7b21a-1aea-4427-9104-090f117c584d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1337ee6d-acd8-4a3e-a020-6bc029080a3e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButtonBase-root:nth-child(6) > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButtonBase-root:nth-child(6) > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div[2]/a[5]/span", "xpath:idRelative"],
+        ["xpath=//a[5]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'ประวัติการบันทึกการชำระเงิน   ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0f5a67fa-ebc9-4a38-bf54-cc528e5de59f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButton-contained > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-contained > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'สร้างข้อมูล')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc92f0ba-20a8-494b-979b-50d5e0fd841c",
+      "comment": "",
+      "command": "click",
+      "target": "name=CustomerPaymentID",
+      "targets": [
+        ["name=CustomerPaymentID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='CustomerPaymentID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div/div[2]/form/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/form/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "03b7dd22-867b-4931-89c6-58a08e294ed2",
+      "comment": "",
+      "command": "select",
+      "target": "name=CustomerPaymentID",
+      "targets": [],
+      "value": "label=Faii"
+    }, {
+      "id": "8c014c3f-773e-46b8-90ea-69f1afc95df0",
+      "comment": "",
+      "command": "click",
+      "target": "id=Bill",
+      "targets": [
+        ["id=Bill", "id"],
+        ["css=#Bill", "css:finder"],
+        ["xpath=//input[@id='Bill']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div/div[3]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "467960dd-a1f8-4a83-a83c-2881a7f19fb2",
+      "comment": "",
+      "command": "type",
+      "target": "id=Bill",
+      "targets": [
+        ["id=Bill", "id"],
+        ["css=#Bill", "css:finder"],
+        ["xpath=//input[@id='Bill']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div/div[3]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "R000005"
+    }, {
+      "id": "b08ddb7c-7e18-4f98-9655-5d664c39bb2a",
+      "comment": "",
+      "command": "click",
+      "target": "name=FacilityID",
+      "targets": [
+        ["name=FacilityID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='FacilityID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div/form/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "766aaae5-b940-4f53-8f57-559f144f5717",
+      "comment": "",
+      "command": "select",
+      "target": "name=FacilityID",
+      "targets": [],
+      "value": "label=A000004 (ค่าบริการ: 1523)"
+    }, {
+      "id": "cd06eeb9-90a3-4c1b-8c73-d0a960505049",
+      "comment": "",
+      "command": "click",
+      "target": "id=Discount",
+      "targets": [
+        ["id=Discount", "id"],
+        ["css=#Discount", "css:finder"],
+        ["xpath=//input[@id='Discount']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[2]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "38947dd1-d955-478d-a548-28a8f906b1c0",
+      "comment": "",
+      "command": "type",
+      "target": "id=Discount",
+      "targets": [
+        ["id=Discount", "id"],
+        ["css=#Discount", "css:finder"],
+        ["xpath=//input[@id='Discount']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[2]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "23"
+    }, {
+      "id": "f8f61181-8565-4fac-a0b2-ea9bf34c141b",
+      "comment": "",
+      "command": "click",
+      "target": "id=Total",
+      "targets": [
+        ["id=Total", "id"],
+        ["css=#Total", "css:finder"],
+        ["xpath=//input[@id='Total']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[3]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d2bc998-37da-48dd-b05e-524d75545b2e",
+      "comment": "",
+      "command": "type",
+      "target": "id=Total",
+      "targets": [
+        ["id=Total", "id"],
+        ["css=#Total", "css:finder"],
+        ["xpath=//input[@id='Total']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[3]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "1500"
+    }, {
+      "id": "202d8c31-324f-4de1-afd5-aadb585f5478",
+      "comment": "",
+      "command": "click",
+      "target": "name=PaymentMethodID",
+      "targets": [
+        ["name=PaymentMethodID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='PaymentMethodID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[4]/form/div/select", "xpath:idRelative"],
+        ["xpath=//div[4]/form/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7604a9c8-2969-4a9f-ba96-05b8baf26f79",
+      "comment": "",
+      "command": "select",
+      "target": "name=PaymentMethodID",
+      "targets": [],
+      "value": "label=Visa"
+    }, {
+      "id": "3531348a-d9ce-45fd-89ab-284095a4f85d",
+      "comment": "",
+      "command": "click",
+      "target": "id=Note",
+      "targets": [
+        ["id=Note", "id"],
+        ["css=#Note", "css:finder"],
+        ["xpath=//input[@id='Note']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[5]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2bdb0c8-d994-482d-8888-dacae79f6676",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.makeStyles-button-40 > .MuiButton-label",
+      "targets": [
+        ["css=.makeStyles-button-40 > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[7]/button/span", "xpath:idRelative"],
+        ["xpath=//div[7]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'บันทึกการชำระเงิน')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "853e93e5-93c7-42e6-901a-d00cf5d676ba",
+      "comment": "",
+      "command": "type",
+      "target": "id=Note",
+      "targets": [
+        ["id=Note", "id"],
+        ["css=#Note", "css:finder"],
+        ["xpath=//input[@id='Note']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[5]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "-"
+    }, {
+      "id": "6ca9198d-9fee-4d65-af89-64a5fb0191d8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.makeStyles-button-40 > .MuiButton-label",
+      "targets": [
+        ["css=.makeStyles-button-40 > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[7]/button/span", "xpath:idRelative"],
+        ["xpath=//div[7]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'บันทึกการชำระเงิน')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a31a450-8d45-4e31-a062-db1073a611f1",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.makeStyles-button-40 > .MuiButton-label",
+      "targets": [
+        ["css=.makeStyles-button-40 > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div[2]/div/div/div[2]/div[7]/button/span", "xpath:idRelative"],
+        ["xpath=//div[7]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'บันทึกการชำระเงิน')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "436668b2-35c8-4be0-98a5-a964db70159e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiAlert-message",
+      "targets": [
+        ["css=.MuiAlert-message", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d326d43-bf83-4cbd-9c1d-065e71ae4450",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.MuiAlert-message",
+      "targets": [
+        ["css=.MuiAlert-message", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div/div/div[2]", "xpath:position"]
+      ],
+      "value": "บันทึกข้อมูลไม่สำเร็จ: รายการชำระค่าบริการซ้ำ"
+    }]
+  }, {
+    "id": "af0fd266-6a48-4982-b1a1-d910009ebb00",
+    "name": "B6238124 - ตรวจสอบ Discount ต้องไม่ติดลบ",
+    "commands": [{
+      "id": "9ca0034f-d1e6-4297-a987-950e2f16524b",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:3000/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8e89af34-0776-40f3-bd2c-6c365f3e7134",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aea997e2-76b7-4a01-b428-e97a6e3e4209",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButtonBase-root:nth-child(6) .MuiTypography-root",
+      "targets": [
+        ["css=.MuiButtonBase-root:nth-child(6) .MuiTypography-root", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/a[5]/span/p", "xpath:idRelative"],
+        ["xpath=//a[5]/span/p", "xpath:position"],
+        ["xpath=//p[contains(.,'ประวัติการบันทึกการชำระเงิน   ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c674419-883a-4d6a-b094-a99aa5e22a95",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.MuiButton-contained > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-contained > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'สร้างข้อมูล')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1e7fc41-3e52-45a4-b095-a2ee2bbd378f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButton-contained > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-contained > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'สร้างข้อมูล')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "027638a8-21ad-4ad3-914f-26952b5ef38c",
+      "comment": "",
+      "command": "click",
+      "target": "name=CustomerPaymentID",
+      "targets": [
+        ["name=CustomerPaymentID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='CustomerPaymentID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div/div[2]/form/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/form/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a0280ab-eb5b-4e05-98dd-da77b92800b6",
+      "comment": "",
+      "command": "select",
+      "target": "name=CustomerPaymentID",
+      "targets": [],
+      "value": "label=Faii"
+    }, {
+      "id": "2be8ee86-2093-41b7-9a24-e2b4018e106a",
+      "comment": "",
+      "command": "click",
+      "target": "id=Bill",
+      "targets": [
+        ["id=Bill", "id"],
+        ["css=#Bill", "css:finder"],
+        ["xpath=//input[@id='Bill']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div/div[3]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f7fa9e37-0283-413f-8b2b-fd9c895c9018",
+      "comment": "",
+      "command": "type",
+      "target": "id=Bill",
+      "targets": [
+        ["id=Bill", "id"],
+        ["css=#Bill", "css:finder"],
+        ["xpath=//input[@id='Bill']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div/div[3]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "R000005"
+    }, {
+      "id": "c1cc560c-3cf9-4c30-a6c2-d10d360d8955",
+      "comment": "",
+      "command": "click",
+      "target": "name=FacilityID",
+      "targets": [
+        ["name=FacilityID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='FacilityID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div/form/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e3a00221-2c48-48cc-8890-d47877b85134",
+      "comment": "",
+      "command": "select",
+      "target": "name=FacilityID",
+      "targets": [],
+      "value": "label=A000010 (ค่าบริการ: 500)"
+    }, {
+      "id": "51b72c19-ad8b-403c-95c1-206bec55b87c",
+      "comment": "",
+      "command": "click",
+      "target": "id=Discount",
+      "targets": [
+        ["id=Discount", "id"],
+        ["css=#Discount", "css:finder"],
+        ["xpath=//input[@id='Discount']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[2]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2f8cb353-5a88-4e71-9270-f97f5bfae5b8",
+      "comment": "",
+      "command": "type",
+      "target": "id=Discount",
+      "targets": [
+        ["id=Discount", "id"],
+        ["css=#Discount", "css:finder"],
+        ["xpath=//input[@id='Discount']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[2]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "-20"
+    }, {
+      "id": "55101322-54ac-4be1-8ada-2d87e94d3597",
+      "comment": "",
+      "command": "click",
+      "target": "id=Total",
+      "targets": [
+        ["id=Total", "id"],
+        ["css=#Total", "css:finder"],
+        ["xpath=//input[@id='Total']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[3]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ccb3161-0100-4a8e-bd0e-14f5cb4f203e",
+      "comment": "",
+      "command": "type",
+      "target": "id=Total",
+      "targets": [
+        ["id=Total", "id"],
+        ["css=#Total", "css:finder"],
+        ["xpath=//input[@id='Total']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[3]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "480"
+    }, {
+      "id": "2a9cf00f-c51a-490a-b22d-e22b80cf8e10",
+      "comment": "",
+      "command": "click",
+      "target": "name=PaymentMethodID",
+      "targets": [
+        ["name=PaymentMethodID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='PaymentMethodID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[4]/form/div/select", "xpath:idRelative"],
+        ["xpath=//div[4]/form/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c8a4542-be2c-4bb8-aba0-dbbbb461778c",
+      "comment": "",
+      "command": "select",
+      "target": "name=PaymentMethodID",
+      "targets": [],
+      "value": "label=Visa"
+    }, {
+      "id": "e4dff474-ca22-4d76-ae2e-6ce7a127e353",
+      "comment": "",
+      "command": "click",
+      "target": "id=Note",
+      "targets": [
+        ["id=Note", "id"],
+        ["css=#Note", "css:finder"],
+        ["xpath=//input[@id='Note']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[5]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a0659c3-94e6-4cde-b5cb-04a2f34b1fe1",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.makeStyles-button-40 > .MuiButton-label",
+      "targets": [
+        ["css=.makeStyles-button-40 > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[7]/button/span", "xpath:idRelative"],
+        ["xpath=//div[7]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'บันทึกการชำระเงิน')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "80816b2e-6804-42b3-8b1f-5cd9442e5b54",
+      "comment": "",
+      "command": "type",
+      "target": "id=Note",
+      "targets": [
+        ["id=Note", "id"],
+        ["css=#Note", "css:finder"],
+        ["xpath=//input[@id='Note']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[5]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "-"
+    }, {
+      "id": "1b17d6ec-cb84-42b9-96d2-87bf72924b5d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.makeStyles-button-40 > .MuiButton-label",
+      "targets": [
+        ["css=.makeStyles-button-40 > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[7]/button/span", "xpath:idRelative"],
+        ["xpath=//div[7]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'บันทึกการชำระเงิน')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "48d64a14-4110-4ace-9eb4-4c9bac7be8d1",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.makeStyles-button-40 > .MuiButton-label",
+      "targets": [
+        ["css=.makeStyles-button-40 > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div[2]/div/div/div[2]/div[7]/button/span", "xpath:idRelative"],
+        ["xpath=//div[7]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'บันทึกการชำระเงิน')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e0d9ab3-31f2-4f09-9480-f3fc6b8088e4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiAlert-message",
+      "targets": [
+        ["css=.MuiAlert-message", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf49176b-5106-43c6-8b3a-7073733224ea",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.MuiAlert-message",
+      "targets": [
+        ["css=.MuiAlert-message", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div/div/div[2]", "xpath:position"]
+      ],
+      "value": "บันทึกข้อมูลไม่สำเร็จ: ส่วนลดต้องไม่ติดลบ"
+    }]
+  }, {
+    "id": "72ba7937-bd06-4281-bbc6-6e68de982171",
+    "name": "B6238124 - ตรวจสอบ Discount ต้องน้อยกว่าหรือเท่ากับ Price",
+    "commands": [{
+      "id": "c265f7d0-47f1-4482-bdc4-8740c6f1ae24",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:3000/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b9a726d2-dbf6-41e1-8b36-acd625e4443e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "19e3bd89-d069-4a12-a955-e6f33068e4d2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButtonBase-root:nth-child(6) .MuiTypography-root",
+      "targets": [
+        ["css=.MuiButtonBase-root:nth-child(6) .MuiTypography-root", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div[2]/a[5]/span/p", "xpath:idRelative"],
+        ["xpath=//a[5]/span/p", "xpath:position"],
+        ["xpath=//p[contains(.,'ประวัติการบันทึกการชำระเงิน   ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb77246a-363d-4298-84e9-3d115de81856",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.MuiButton-contained > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-contained > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'สร้างข้อมูล')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f963f3c1-8929-465b-93b4-5d6a0b67e644",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButton-contained > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-contained > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'สร้างข้อมูล')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0f8a67fa-439b-445e-aa71-2d66d6d5400b",
+      "comment": "",
+      "command": "click",
+      "target": "name=CustomerPaymentID",
+      "targets": [
+        ["name=CustomerPaymentID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='CustomerPaymentID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div/div[2]/form/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/form/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "baa46c9c-0386-4eb1-b6c2-2ee0e2c567c1",
+      "comment": "",
+      "command": "select",
+      "target": "name=CustomerPaymentID",
+      "targets": [],
+      "value": "label=Faii"
+    }, {
+      "id": "1c031cac-b0ff-4609-8967-a220e43917ac",
+      "comment": "",
+      "command": "click",
+      "target": "id=Bill",
+      "targets": [
+        ["id=Bill", "id"],
+        ["css=#Bill", "css:finder"],
+        ["xpath=//input[@id='Bill']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div/div[3]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "35df1d2f-f3e3-4106-b34b-acf94eb31878",
+      "comment": "",
+      "command": "type",
+      "target": "id=Bill",
+      "targets": [
+        ["id=Bill", "id"],
+        ["css=#Bill", "css:finder"],
+        ["xpath=//input[@id='Bill']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div/div[3]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "R000005"
+    }, {
+      "id": "d730cf1a-b43d-4b95-a342-21c44f5e5730",
+      "comment": "",
+      "command": "click",
+      "target": "name=FacilityID",
+      "targets": [
+        ["name=FacilityID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='FacilityID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div/form/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab7fdee1-03ab-489c-a4e9-c6f90b49b5a7",
+      "comment": "",
+      "command": "select",
+      "target": "name=FacilityID",
+      "targets": [],
+      "value": "label=A000010 (ค่าบริการ: 500)"
+    }, {
+      "id": "9f83c10c-b674-4a00-a63e-8b274f592a59",
+      "comment": "",
+      "command": "click",
+      "target": "id=Discount",
+      "targets": [
+        ["id=Discount", "id"],
+        ["css=#Discount", "css:finder"],
+        ["xpath=//input[@id='Discount']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[2]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3daf8f2-5c83-4d4b-8b8e-0d07d26e5125",
+      "comment": "",
+      "command": "type",
+      "target": "id=Discount",
+      "targets": [
+        ["id=Discount", "id"],
+        ["css=#Discount", "css:finder"],
+        ["xpath=//input[@id='Discount']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[2]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "5000"
+    }, {
+      "id": "1f250bc0-b30e-4608-a1c7-872dfce11e2f",
+      "comment": "",
+      "command": "click",
+      "target": "id=Total",
+      "targets": [
+        ["id=Total", "id"],
+        ["css=#Total", "css:finder"],
+        ["xpath=//input[@id='Total']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[3]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a78afc6-f67a-4f19-b3cc-3479fae2fdd7",
+      "comment": "",
+      "command": "type",
+      "target": "id=Total",
+      "targets": [
+        ["id=Total", "id"],
+        ["css=#Total", "css:finder"],
+        ["xpath=//input[@id='Total']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[3]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "088d5bd1-196d-4b21-8355-854973aa0170",
+      "comment": "",
+      "command": "click",
+      "target": "name=PaymentMethodID",
+      "targets": [
+        ["name=PaymentMethodID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='PaymentMethodID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[4]/form/div/select", "xpath:idRelative"],
+        ["xpath=//div[4]/form/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e22f47c0-c1d1-47ff-bf9b-94f65db4f35a",
+      "comment": "",
+      "command": "select",
+      "target": "name=PaymentMethodID",
+      "targets": [],
+      "value": "label=Visa"
+    }, {
+      "id": "9159c5e6-649b-49b8-87ef-06ea6fbc6020",
+      "comment": "",
+      "command": "click",
+      "target": "id=Note",
+      "targets": [
+        ["id=Note", "id"],
+        ["css=#Note", "css:finder"],
+        ["xpath=//input[@id='Note']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[5]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a54b9b4c-b3e9-4f63-9546-4487ff210673",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.makeStyles-button-40 > .MuiButton-label",
+      "targets": [
+        ["css=.makeStyles-button-40 > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[7]/button/span", "xpath:idRelative"],
+        ["xpath=//div[7]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'บันทึกการชำระเงิน')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd2d0e88-8562-4e40-bb20-9986da2c09fb",
+      "comment": "",
+      "command": "type",
+      "target": "id=Note",
+      "targets": [
+        ["id=Note", "id"],
+        ["css=#Note", "css:finder"],
+        ["xpath=//input[@id='Note']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[5]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "-"
+    }, {
+      "id": "199534cf-2422-404b-b3f3-5aefdae5d813",
+      "comment": "",
+      "command": "click",
+      "target": "css=.makeStyles-button-40 > .MuiButton-label",
+      "targets": [
+        ["css=.makeStyles-button-40 > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[7]/button/span", "xpath:idRelative"],
+        ["xpath=//div[7]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'บันทึกการชำระเงิน')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b65a177c-61c3-4f0d-9ed8-050bf7e26399",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.makeStyles-button-40 > .MuiButton-label",
+      "targets": [
+        ["css=.makeStyles-button-40 > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div[2]/div/div/div[2]/div[7]/button/span", "xpath:idRelative"],
+        ["xpath=//div[7]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'บันทึกการชำระเงิน')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f5cbf07c-b301-4570-adcb-f56558a49c8e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiAlert-root",
+      "targets": [
+        ["css=.MuiAlert-root", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1571e51-3750-4ea7-8499-effe787f35f7",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.MuiAlert-message",
+      "targets": [
+        ["css=.MuiAlert-message", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div/div/div[2]", "xpath:position"]
+      ],
+      "value": "บันทึกข้อมูลไม่สำเร็จ: ส่วนลดต้องน้อยกว่าหรือเท่ากับค่าบริการ"
+    }]
+  }, {
+    "id": "7cc06843-f4f0-468c-848b-80da8b431265",
+    "name": "B6238124 - ตรวจสอบ Total ต้องไม่ติดลบ",
+    "commands": [{
+      "id": "6636ba6f-c4e3-4c38-8d83-635c03b2959a",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:3000/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "23f3dc6b-53f7-4468-8f5e-7f3db3e7d2d9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bab12b41-1277-42f4-8a95-9f5514255cfc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButtonBase-root:nth-child(6) > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButtonBase-root:nth-child(6) > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/a[5]/span", "xpath:idRelative"],
+        ["xpath=//a[5]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'ประวัติการบันทึกการชำระเงิน   ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1dbedb94-ab1f-46e1-87c9-233448ae2601",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=สร้างข้อมูล",
+      "targets": [
+        ["linkText=สร้างข้อมูล", "linkText"],
+        ["css=.MuiButton-contained", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/PaymentCreate')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'สร้างข้อมูล')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c7a47b7-5522-4be5-8a3c-b1505078ae3c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=สร้างข้อมูล",
+      "targets": [
+        ["linkText=สร้างข้อมูล", "linkText"],
+        ["css=.MuiButton-contained", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/PaymentCreate')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'สร้างข้อมูล')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d9cedc80-b62b-4c17-9b73-edcd0b07ccf2",
+      "comment": "",
+      "command": "click",
+      "target": "name=CustomerPaymentID",
+      "targets": [
+        ["name=CustomerPaymentID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='CustomerPaymentID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div/div[2]/form/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/form/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "73558bed-42bb-418f-bc0b-d0e005e905c9",
+      "comment": "",
+      "command": "select",
+      "target": "name=CustomerPaymentID",
+      "targets": [],
+      "value": "label=Faii"
+    }, {
+      "id": "8905a685-13c3-4c88-9ca9-f5dc742cd5ec",
+      "comment": "",
+      "command": "click",
+      "target": "id=Bill",
+      "targets": [
+        ["id=Bill", "id"],
+        ["css=#Bill", "css:finder"],
+        ["xpath=//input[@id='Bill']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div/div[3]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cc9505c1-e9f9-4bca-acac-cc439596288d",
+      "comment": "",
+      "command": "type",
+      "target": "id=Bill",
+      "targets": [
+        ["id=Bill", "id"],
+        ["css=#Bill", "css:finder"],
+        ["xpath=//input[@id='Bill']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div/div[3]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "R000005"
+    }, {
+      "id": "834b483c-2187-4031-9cdc-89b6534c1fdc",
+      "comment": "",
+      "command": "click",
+      "target": "name=FacilityID",
+      "targets": [
+        ["name=FacilityID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='FacilityID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div/form/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d1e8797-b594-4c43-8edf-7bcef71239a6",
+      "comment": "",
+      "command": "select",
+      "target": "name=FacilityID",
+      "targets": [],
+      "value": "label=A000010 (ค่าบริการ: 500)"
+    }, {
+      "id": "d2266cce-d3f0-476b-8aac-fecdc1cc90ac",
+      "comment": "",
+      "command": "click",
+      "target": "id=Discount",
+      "targets": [
+        ["id=Discount", "id"],
+        ["css=#Discount", "css:finder"],
+        ["xpath=//input[@id='Discount']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[2]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9445b358-74da-4208-b9cd-04decdbc2855",
+      "comment": "",
+      "command": "type",
+      "target": "id=Discount",
+      "targets": [
+        ["id=Discount", "id"],
+        ["css=#Discount", "css:finder"],
+        ["xpath=//input[@id='Discount']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[2]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "8c3b8bae-3e5d-4efe-be22-4ac0f852e43a",
+      "comment": "",
+      "command": "click",
+      "target": "id=Total",
+      "targets": [
+        ["id=Total", "id"],
+        ["css=#Total", "css:finder"],
+        ["xpath=//input[@id='Total']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[3]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a0b2c5a-c436-40e7-9314-b0330e3e0176",
+      "comment": "",
+      "command": "type",
+      "target": "id=Total",
+      "targets": [
+        ["id=Total", "id"],
+        ["css=#Total", "css:finder"],
+        ["xpath=//input[@id='Total']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[3]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "-500"
+    }, {
+      "id": "9f3e947e-4c2a-4035-9325-44bcdbd7934c",
+      "comment": "",
+      "command": "click",
+      "target": "name=PaymentMethodID",
+      "targets": [
+        ["name=PaymentMethodID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='PaymentMethodID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[4]/form/div/select", "xpath:idRelative"],
+        ["xpath=//div[4]/form/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8cf7ac87-65e8-47dc-a380-c781405e5d3a",
+      "comment": "",
+      "command": "select",
+      "target": "name=PaymentMethodID",
+      "targets": [],
+      "value": "label=Visa"
+    }, {
+      "id": "804441c8-0158-4174-8c22-48ca5357cc09",
+      "comment": "",
+      "command": "click",
+      "target": "id=Note",
+      "targets": [
+        ["id=Note", "id"],
+        ["css=#Note", "css:finder"],
+        ["xpath=//input[@id='Note']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[5]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "feb1cf57-899a-46eb-84d3-072d176de39c",
+      "comment": "",
+      "command": "type",
+      "target": "id=Note",
+      "targets": [
+        ["id=Note", "id"],
+        ["css=#Note", "css:finder"],
+        ["xpath=//input[@id='Note']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[5]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "-"
+    }, {
+      "id": "d0dc3dc3-699f-41ed-96bd-d7d55050cd18",
+      "comment": "",
+      "command": "click",
+      "target": "css=.makeStyles-button-40 > .MuiButton-label",
+      "targets": [
+        ["css=.makeStyles-button-40 > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[7]/button/span", "xpath:idRelative"],
+        ["xpath=//div[7]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'บันทึกการชำระเงิน')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "975b857a-85bb-401f-9320-0cd2be9d0875",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiAlert-root",
+      "targets": [
+        ["css=.MuiAlert-root", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4831f4ae-c470-49cc-ad01-6de866c8ff3d",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.MuiAlert-message",
+      "targets": [
+        ["css=.MuiAlert-message", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div/div/div[2]", "xpath:position"]
+      ],
+      "value": "บันทึกข้อมูลไม่สำเร็จ: ยอดรวมต้องไม่ติดลบ"
+    }]
+  }, {
+    "id": "9f481df1-6c20-4123-b176-a5f40100f5c3",
+    "name": "B6238124 - ตรวจสอบ Total ต้องน้อยกว่าหรือเท่ากับ Price",
+    "commands": [{
+      "id": "88faf44b-fc39-402b-b7ce-0d3f3a97ff2c",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:3000/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5a4cca78-bbbc-4183-93f0-a9afa173e2f2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dcfdbab7-1138-43cc-9b38-401eeb1b1086",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButtonBase-root:nth-child(6) .MuiTypography-root",
+      "targets": [
+        ["css=.MuiButtonBase-root:nth-child(6) .MuiTypography-root", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div[2]/a[5]/span/p", "xpath:idRelative"],
+        ["xpath=//a[5]/span/p", "xpath:position"],
+        ["xpath=//p[contains(.,'ประวัติการบันทึกการชำระเงิน   ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2be5ca58-449d-4629-bd8b-00e3e93b61a5",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.MuiButton-contained > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-contained > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'สร้างข้อมูล')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9341acd4-e312-4ab5-9888-9ac95346c0da",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButton-contained > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-contained > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'สร้างข้อมูล')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dddfeb95-f1ce-4002-9a5f-18bebd2e6532",
+      "comment": "",
+      "command": "click",
+      "target": "name=CustomerPaymentID",
+      "targets": [
+        ["name=CustomerPaymentID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='CustomerPaymentID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div/div[2]/form/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/form/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7970991f-d248-4f5a-94c7-fec6f963383f",
+      "comment": "",
+      "command": "select",
+      "target": "name=CustomerPaymentID",
+      "targets": [],
+      "value": "label=Faii"
+    }, {
+      "id": "dac1485f-0530-4fc2-81d3-295a8d40adf9",
+      "comment": "",
+      "command": "click",
+      "target": "id=Bill",
+      "targets": [
+        ["id=Bill", "id"],
+        ["css=#Bill", "css:finder"],
+        ["xpath=//input[@id='Bill']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div/div[3]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a1ab55e6-4ba1-477d-b9aa-3697ca6f86f7",
+      "comment": "",
+      "command": "type",
+      "target": "id=Bill",
+      "targets": [
+        ["id=Bill", "id"],
+        ["css=#Bill", "css:finder"],
+        ["xpath=//input[@id='Bill']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div/div[3]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "R000005"
+    }, {
+      "id": "ba7e8402-06b1-46cc-b09d-bfae22118984",
+      "comment": "",
+      "command": "click",
+      "target": "name=FacilityID",
+      "targets": [
+        ["name=FacilityID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='FacilityID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div/form/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4fe4bec8-e171-4837-8191-d83969adf558",
+      "comment": "",
+      "command": "select",
+      "target": "name=FacilityID",
+      "targets": [],
+      "value": "label=A000010 (ค่าบริการ: 500)"
+    }, {
+      "id": "ce721ca1-a98f-438c-83e3-6edadabf91bb",
+      "comment": "",
+      "command": "click",
+      "target": "id=Discount",
+      "targets": [
+        ["id=Discount", "id"],
+        ["css=#Discount", "css:finder"],
+        ["xpath=//input[@id='Discount']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[2]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cae443ca-771f-436a-916e-46fba3fa49a5",
+      "comment": "",
+      "command": "type",
+      "target": "id=Discount",
+      "targets": [
+        ["id=Discount", "id"],
+        ["css=#Discount", "css:finder"],
+        ["xpath=//input[@id='Discount']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[2]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "db5e872a-d7ac-47f8-920a-750c340f1eb2",
+      "comment": "",
+      "command": "click",
+      "target": "id=Total",
+      "targets": [
+        ["id=Total", "id"],
+        ["css=#Total", "css:finder"],
+        ["xpath=//input[@id='Total']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[3]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "64cde96f-0e7e-4b73-aa90-3844bfc035d0",
+      "comment": "",
+      "command": "type",
+      "target": "id=Total",
+      "targets": [
+        ["id=Total", "id"],
+        ["css=#Total", "css:finder"],
+        ["xpath=//input[@id='Total']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[3]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "5000"
+    }, {
+      "id": "7c3cd817-a0d9-49d5-80a7-3d65217438fa",
+      "comment": "",
+      "command": "click",
+      "target": "name=PaymentMethodID",
+      "targets": [
+        ["name=PaymentMethodID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='PaymentMethodID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[4]/form/div/select", "xpath:idRelative"],
+        ["xpath=//div[4]/form/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0687c2b2-fa36-4b94-8565-01bb1bbd47b9",
+      "comment": "",
+      "command": "select",
+      "target": "name=PaymentMethodID",
+      "targets": [],
+      "value": "label=Visa"
+    }, {
+      "id": "259eb35e-c592-44cb-8a05-eb59184c0833",
+      "comment": "",
+      "command": "click",
+      "target": "id=Note",
+      "targets": [
+        ["id=Note", "id"],
+        ["css=#Note", "css:finder"],
+        ["xpath=//input[@id='Note']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[5]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a33fd02-7928-4ab9-b18a-625aeaaec4fb",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.makeStyles-button-40 > .MuiButton-label",
+      "targets": [
+        ["css=.makeStyles-button-40 > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[7]/button/span", "xpath:idRelative"],
+        ["xpath=//div[7]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'บันทึกการชำระเงิน')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce31abe3-9bd9-4d83-9e1e-8bb367f51744",
+      "comment": "",
+      "command": "type",
+      "target": "id=Note",
+      "targets": [
+        ["id=Note", "id"],
+        ["css=#Note", "css:finder"],
+        ["xpath=//input[@id='Note']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[5]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "-"
+    }, {
+      "id": "4ddcf918-eba1-4baf-9a5a-b1826c60e920",
+      "comment": "",
+      "command": "click",
+      "target": "css=.makeStyles-button-40 > .MuiButton-label",
+      "targets": [
+        ["css=.makeStyles-button-40 > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[7]/button/span", "xpath:idRelative"],
+        ["xpath=//div[7]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'บันทึกการชำระเงิน')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0c4584ee-4608-406b-beac-7843701c3584",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.makeStyles-button-40 > .MuiButton-label",
+      "targets": [
+        ["css=.makeStyles-button-40 > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div[2]/div/div/div[2]/div[7]/button/span", "xpath:idRelative"],
+        ["xpath=//div[7]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'บันทึกการชำระเงิน')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac9d1a87-f43b-4864-930e-c0b9560cc787",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiAlert-root",
+      "targets": [
+        ["css=.MuiAlert-root", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf648869-c675-4786-8795-1e76f1e66695",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.MuiAlert-message",
+      "targets": [
+        ["css=.MuiAlert-message", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div/div/div[2]", "xpath:position"]
+      ],
+      "value": "บันทึกข้อมูลไม่สำเร็จ: ยอดรวมต้องน้อยกว่าหรือเท่ากับค่าบริการ"
+    }]
+  }, {
+    "id": "9818010e-9533-4143-a20c-47277b438952",
+    "name": "B6238124 - ตรวจสอบ Note ต้องไม่เป็นค่าว่าง",
+    "commands": [{
+      "id": "7879827d-cb4b-4962-8659-199c96f8a14e",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:3000/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1de8b30b-55fa-4f65-af4b-2421dcd6ebc9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "66375d2e-93bd-425c-965f-87c392a4ee4e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButtonBase-root:nth-child(6) > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButtonBase-root:nth-child(6) > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div[2]/a[5]/span", "xpath:idRelative"],
+        ["xpath=//a[5]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'ประวัติการบันทึกการชำระเงิน   ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a8644ce-42eb-4130-bf02-b0f51787f5a8",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.MuiButton-contained > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-contained > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'สร้างข้อมูล')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a7356f8-1468-4c72-bb53-af3c67e8f8d9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButton-contained > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-contained > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'สร้างข้อมูล')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "181e2f08-28de-4028-ad12-dda5d7a52b86",
+      "comment": "",
+      "command": "click",
+      "target": "name=CustomerPaymentID",
+      "targets": [
+        ["name=CustomerPaymentID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='CustomerPaymentID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div/div[2]/form/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/form/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "da97588b-0c51-4263-9eef-c44bd9b8200a",
+      "comment": "",
+      "command": "select",
+      "target": "name=CustomerPaymentID",
+      "targets": [],
+      "value": "label=Faii"
+    }, {
+      "id": "39f42448-542a-43a0-8d13-2a4d120c8f55",
+      "comment": "",
+      "command": "click",
+      "target": "id=Bill",
+      "targets": [
+        ["id=Bill", "id"],
+        ["css=#Bill", "css:finder"],
+        ["xpath=//input[@id='Bill']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div/div[3]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "490bf662-cf83-452e-9b9a-788642d4af88",
+      "comment": "",
+      "command": "type",
+      "target": "id=Bill",
+      "targets": [
+        ["id=Bill", "id"],
+        ["css=#Bill", "css:finder"],
+        ["xpath=//input[@id='Bill']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div/div[3]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "R000005"
+    }, {
+      "id": "38107710-e92e-4308-bfde-c7d94916a6e1",
+      "comment": "",
+      "command": "click",
+      "target": "name=FacilityID",
+      "targets": [
+        ["name=FacilityID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='FacilityID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div/form/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e823cdc-4aa1-4c3b-9b6f-ed64e76724c4",
+      "comment": "",
+      "command": "select",
+      "target": "name=FacilityID",
+      "targets": [],
+      "value": "label=A000010 (ค่าบริการ: 500)"
+    }, {
+      "id": "d96b88e0-949b-46e8-a3c1-9706dd4230a3",
+      "comment": "",
+      "command": "click",
+      "target": "id=Discount",
+      "targets": [
+        ["id=Discount", "id"],
+        ["css=#Discount", "css:finder"],
+        ["xpath=//input[@id='Discount']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[2]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "06ef62d3-2783-4aad-bca9-b2987686716a",
+      "comment": "",
+      "command": "type",
+      "target": "id=Discount",
+      "targets": [
+        ["id=Discount", "id"],
+        ["css=#Discount", "css:finder"],
+        ["xpath=//input[@id='Discount']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[2]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "200"
+    }, {
+      "id": "5814f6ff-2c45-481d-9c98-afd7054e2158",
+      "comment": "",
+      "command": "click",
+      "target": "id=Total",
+      "targets": [
+        ["id=Total", "id"],
+        ["css=#Total", "css:finder"],
+        ["xpath=//input[@id='Total']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[3]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "05e711fe-bf79-472e-bba5-076f12e0fe5f",
+      "comment": "",
+      "command": "type",
+      "target": "id=Total",
+      "targets": [
+        ["id=Total", "id"],
+        ["css=#Total", "css:finder"],
+        ["xpath=//input[@id='Total']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[3]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "300"
+    }, {
+      "id": "c487739f-deb0-4d32-83d3-6389c15ea867",
+      "comment": "",
+      "command": "click",
+      "target": "name=PaymentMethodID",
+      "targets": [
+        ["name=PaymentMethodID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='PaymentMethodID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[4]/form/div/select", "xpath:idRelative"],
+        ["xpath=//div[4]/form/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "46fc98de-c74c-4f78-a8c8-817318dfd64c",
+      "comment": "",
+      "command": "select",
+      "target": "name=PaymentMethodID",
+      "targets": [],
+      "value": "label=Visa"
+    }, {
+      "id": "ab02f747-0991-4a2b-8455-a745748bebc6",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.makeStyles-button-40 > .MuiButton-label",
+      "targets": [
+        ["css=.makeStyles-button-40 > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[7]/button/span", "xpath:idRelative"],
+        ["xpath=//div[7]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'บันทึกการชำระเงิน')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "67a37fb8-c14e-4892-bec6-c072aa971c89",
+      "comment": "",
+      "command": "click",
+      "target": "css=.makeStyles-button-40 > .MuiButton-label",
+      "targets": [
+        ["css=.makeStyles-button-40 > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[7]/button/span", "xpath:idRelative"],
+        ["xpath=//div[7]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'บันทึกการชำระเงิน')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1dbc5851-802f-4a42-a04c-8283d7083ec1",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.makeStyles-button-40 > .MuiButton-label",
+      "targets": [
+        ["css=.makeStyles-button-40 > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div[2]/div/div/div[2]/div[7]/button/span", "xpath:idRelative"],
+        ["xpath=//div[7]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'บันทึกการชำระเงิน')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "57798030-d3f5-4ae1-abc1-b9965d8d8396",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiAlert-root",
+      "targets": [
+        ["css=.MuiAlert-root", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3b967526-9e51-42c0-97c4-ee9fc5f06ecc",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.MuiAlert-message",
+      "targets": [
+        ["css=.MuiAlert-message", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div/div/div[2]", "xpath:position"]
+      ],
+      "value": "บันทึกข้อมูลไม่สำเร็จ: Note cannot be blank"
+    }]
+  }, {
+    "id": "b5a96100-6682-48df-aa59-2ebe65ea4817",
+    "name": "B6238124 - ตรวจสอบ AddedTime ต้องเป็นอดีต",
+    "commands": [{
+      "id": "83557f84-3f07-4921-9681-86b2f0fbc7e3",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:3000/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f10a13a4-4b74-4ddc-a2b4-1a2c5d4446db",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9ca9e4ad-c216-4712-baa4-95752e475f40",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.MuiButtonBase-root:nth-child(6) > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButtonBase-root:nth-child(6) > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div[2]/a[5]/span", "xpath:idRelative"],
+        ["xpath=//a[5]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'ประวัติการบันทึกการชำระเงิน   ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8fd2756f-b5f7-4b54-ae55-0d765348a589",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButtonBase-root:nth-child(6) > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButtonBase-root:nth-child(6) > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div[2]/a[5]/span", "xpath:idRelative"],
+        ["xpath=//a[5]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'ประวัติการบันทึกการชำระเงิน   ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "69d4944d-6f8e-42f7-a7dc-3ec692d70b31",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.MuiButton-contained > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-contained > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'สร้างข้อมูล')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1b8caebe-59f7-4f66-8ffc-25e20bb8530e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButton-contained > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-contained > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'สร้างข้อมูล')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cea34a37-36ec-431c-b37d-296783d61ca9",
+      "comment": "",
+      "command": "click",
+      "target": "name=CustomerPaymentID",
+      "targets": [
+        ["name=CustomerPaymentID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='CustomerPaymentID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div/div[2]/form/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/form/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2729f15a-86cd-4b8d-a646-91f7a2c7631c",
+      "comment": "",
+      "command": "select",
+      "target": "name=CustomerPaymentID",
+      "targets": [],
+      "value": "label=Faii"
+    }, {
+      "id": "46e18bc9-3a34-4f51-8c2d-f040c8283321",
+      "comment": "",
+      "command": "click",
+      "target": "id=Bill",
+      "targets": [
+        ["id=Bill", "id"],
+        ["css=#Bill", "css:finder"],
+        ["xpath=//input[@id='Bill']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div/div[3]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a143876d-225f-42ab-a02d-2e2f7c3d1ee5",
+      "comment": "",
+      "command": "type",
+      "target": "id=Bill",
+      "targets": [
+        ["id=Bill", "id"],
+        ["css=#Bill", "css:finder"],
+        ["xpath=//input[@id='Bill']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div/div[3]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "R000005"
+    }, {
+      "id": "e6522cde-01e9-4eb5-b3fe-f0da66aafaf3",
+      "comment": "",
+      "command": "click",
+      "target": "name=FacilityID",
+      "targets": [
+        ["name=FacilityID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='FacilityID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div/form/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "05b95107-f5a1-424c-a682-9ae36b7d3b01",
+      "comment": "",
+      "command": "select",
+      "target": "name=FacilityID",
+      "targets": [],
+      "value": "label=A000010 (ค่าบริการ: 500)"
+    }, {
+      "id": "ecc2bea3-68ed-47df-9439-338299019994",
+      "comment": "",
+      "command": "click",
+      "target": "id=Discount",
+      "targets": [
+        ["id=Discount", "id"],
+        ["css=#Discount", "css:finder"],
+        ["xpath=//input[@id='Discount']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[2]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e19b5572-6ec1-4d47-9a1b-61c7e5d23fc7",
+      "comment": "",
+      "command": "type",
+      "target": "id=Discount",
+      "targets": [
+        ["id=Discount", "id"],
+        ["css=#Discount", "css:finder"],
+        ["xpath=//input[@id='Discount']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[2]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "200"
+    }, {
+      "id": "6cbdc30d-9548-4690-a4cc-3dc9923ad9b7",
+      "comment": "",
+      "command": "click",
+      "target": "id=Total",
+      "targets": [
+        ["id=Total", "id"],
+        ["css=#Total", "css:finder"],
+        ["xpath=//input[@id='Total']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[3]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ac9e25b-ba52-4127-baa5-51e226736521",
+      "comment": "",
+      "command": "type",
+      "target": "id=Total",
+      "targets": [
+        ["id=Total", "id"],
+        ["css=#Total", "css:finder"],
+        ["xpath=//input[@id='Total']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[3]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "300"
+    }, {
+      "id": "7f3fb8d1-d9e1-4e78-9855-0a441990f074",
+      "comment": "",
+      "command": "click",
+      "target": "name=PaymentMethodID",
+      "targets": [
+        ["name=PaymentMethodID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='PaymentMethodID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[4]/form/div/select", "xpath:idRelative"],
+        ["xpath=//div[4]/form/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "679dbc5f-3f3f-4eaa-89f3-c7836bca9b01",
+      "comment": "",
+      "command": "select",
+      "target": "name=PaymentMethodID",
+      "targets": [],
+      "value": "label=Visa"
+    }, {
+      "id": "9bb7d3ea-1065-4c77-90c7-53732c0fd7cb",
+      "comment": "",
+      "command": "click",
+      "target": "id=Note",
+      "targets": [
+        ["id=Note", "id"],
+        ["css=#Note", "css:finder"],
+        ["xpath=//input[@id='Note']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[5]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "45c7f622-7b27-493c-a582-26b6efc155e0",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.MuiInputAdornment-root .MuiSvgIcon-root",
+      "targets": [
+        ["css=.MuiInputAdornment-root .MuiSvgIcon-root", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "d96d333b-d32c-4dd3-b8bf-1611768d8878",
+      "comment": "",
+      "command": "type",
+      "target": "id=Note",
+      "targets": [
+        ["id=Note", "id"],
+        ["css=#Note", "css:finder"],
+        ["xpath=//input[@id='Note']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[5]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "-"
+    }, {
+      "id": "43d2d69c-bc09-4bae-a721-a54e9af2397f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiInputAdornment-root .MuiSvgIcon-root",
+      "targets": [
+        ["css=.MuiInputAdornment-root .MuiSvgIcon-root", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "35c4b4b5-cdac-4f31-9d2c-e5b432627b99",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.MuiInputAdornment-root .MuiSvgIcon-root",
+      "targets": [
+        ["css=.MuiInputAdornment-root .MuiSvgIcon-root", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "1042d05b-1045-42a1-97f9-d99f6fef91ce",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(1) > .MuiButtonBase-root > .MuiButton-label > .MuiTypography-root",
+      "targets": [
+        ["css=div:nth-child(1) > .MuiButtonBase-root > .MuiButton-label > .MuiTypography-root", "css:finder"],
+        ["xpath=//h6", "xpath:position"],
+        ["xpath=//h6[contains(.,'2022')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9012ea6a-81bd-41e9-88ea-bd838f2d069f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiTypography-root:nth-child(44)",
+      "targets": [
+        ["css=.MuiTypography-root:nth-child(44)", "css:finder"],
+        ["xpath=//div[44]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "01a1190d-f0f9-420e-8f01-7c85d3ee2f14",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButton-textPrimary:nth-child(2) > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-textPrimary:nth-child(2) > .MuiButton-label", "css:finder"],
+        ["xpath=//div[3]/div/div[2]/button[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'OK')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "14be50e4-2114-4862-95be-8c2ef9949e10",
+      "comment": "",
+      "command": "click",
+      "target": "css=.makeStyles-button-40 > .MuiButton-label",
+      "targets": [
+        ["css=.makeStyles-button-40 > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div[7]/button/span", "xpath:idRelative"],
+        ["xpath=//div[7]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'บันทึกการชำระเงิน')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "988c89b3-606e-4e25-be6f-2000db5bd82a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiAlert-root",
+      "targets": [
+        ["css=.MuiAlert-root", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d1c7668-09de-4a9d-b155-649a2e9207e9",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.MuiAlert-message",
+      "targets": [
+        ["css=.MuiAlert-message", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div/div/div[2]", "xpath:position"]
+      ],
+      "value": "บันทึกข้อมูลไม่สำเร็จ: AddedTime must be in the past"
+    }]
+  }],
+  "suites": [{
+    "id": "689102a4-dcf7-4e0f-8f17-814a3037c90f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e6572730-2322-43d4-9639-fbb3963e4cdb"]
+  }],
+  "urls": ["http://localhost:3000/"],
+  "plugins": []
+}
